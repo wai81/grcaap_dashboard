@@ -1,0 +1,31 @@
+.number {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+.number .counter {
+    font-weight: bold;
+    /* font-style: italic; */
+    font-size: 1.9em;
+    margin: 0px 0 0 0;
+  }
+
+  .counters{
+    display: flex;
+    flex-direction: column;
+  }
+
+.number .label{
+    display: block;
+    margin-bottom: 22px;
+}
+
+@media (max-width:767px) {
+    .counters{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+}

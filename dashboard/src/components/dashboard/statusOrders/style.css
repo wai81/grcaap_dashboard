@@ -1,0 +1,11 @@
+.custom-tooltip {
+    border: 3px rgb(169, 167, 167);
+    border-radius: 5px ;
+    line-height: 10px;
+    padding: 5px 5px 10px 5px ;
+    background-color: rgba(250, 249, 249, 0.815);
+  }
+  
+  .label {
+    font-weight: 600;
+  }
