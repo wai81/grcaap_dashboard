@@ -5,7 +5,7 @@ import { OrderEdit } from './pages/orders/edit'
 import { OrdersList } from './pages/orders/list'
 import { OrderCreate } from './pages/orders/create'
 import { authProvider } from './providers/auth-provider'
-import { Login } from './pages/login'
+import { Login } from './pages/auth/login'
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 import routerProvider, { NavigateToResource } from "@refinedev/react-router-v6";
 import { ConfigProvider, App as AntdApp } from 'antd'
