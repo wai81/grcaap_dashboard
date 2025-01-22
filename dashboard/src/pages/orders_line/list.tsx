@@ -45,7 +45,7 @@ export const OrdersLineList = () => {
                     operator: "between",
                     value: [
                         now.subtract(1, "month").startOf("day").format('YYYY-MM-DD HH:mm:ss'),
-                        now.endOf("day").format(),
+                        now.endOf("day").format('YYYY-MM-DD HH:mm:ss'),
                     ],
                 },
             ],
@@ -240,7 +240,18 @@ export const OrdersLineList = () => {
                         </FilterDropdown>
                     )}
                     render={(value: boolean | null) => <DeptureStatus status={value} />} />
-
+                <Table.Column
+                    dataIndex={["departure_date"]}
+                    title={translate("in_line.fields.departure_date")}
+                    width={100}
+                    render={(value: any) => <DateField value={value} format="DD.MM.YYYY" />}
+                />
+                <Table.Column
+                    dataIndex={["completion_date"]}
+                    title={translate("in_line.fields.completion_date")}
+                    width={100}
+                    render={(value: any) => <DateField value={value} format="DD.MM.YYYY" />}
+                />
                 <Table.Column
                     width={120}
                     dataIndex={["is_completed"]}

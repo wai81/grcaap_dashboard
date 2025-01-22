@@ -159,6 +159,8 @@
       "phone": "Телефон",
       "adress_object": "Адрес объекта",
       "created_at": "Создан",
+      "departure_date": "Обследование",
+      "completion_date": "Выполенение",
       "departure": {
         "title":"Выезд",
         "true": "Да",
@@ -185,6 +187,8 @@
       "phone": "Телефон",
       "adress_object": "Адрес объекта",
       "created_at": "Создан",
+      "departure_date": "Обследование",
+      "completion_date": "Выполнение",
       "departure": {
         "title":"Выезд",
         "true": "Да",

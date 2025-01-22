@@ -158,11 +158,13 @@
         "order_create_date": "Оrder date",
         "adress_object": "Аdress object",
         "phone": "Phone",
+        "departure_date": "Departure date",
+        "completion_date": "Сompletion date",
         "created_at": "Created at",
         "is_active": {
           "title": "Status",  
-          "true": "In work",
-          "false": "Completed"
+          "true": "Completed",
+          "false": "In work"
         }
       }
     },
@@ -180,6 +182,8 @@
         "adress_object": "Аdress object",
         "phone": "Phone",
         "created_at": "Created at",
+        "departure_date": "Departure date",
+        "completion_date": "Сompletion",
         "departure": {
           "title":"Departure",
           "true": "Yes",
@@ -187,8 +191,8 @@
         },
         "is_active": {
           "title": "Status",  
-          "true": "In work",
-          "false": "Completed"
+          "true": "Completed",
+          "false": "In work"
         }
       }
     },

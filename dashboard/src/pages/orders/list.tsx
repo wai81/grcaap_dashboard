@@ -88,7 +88,7 @@ export const OrdersList = () => {
             >
                 {/* <Table.Column dataIndex="id" title="ID" /> */}
                 <Table.Column dataIndex="order_number" title={translate("line_orders.fields.order_number")}
-                    width={160}
+                    width={150}
                     sorter
                     defaultSortOrder={getDefaultSortOrder("order_number", sorters)}
                     key={"order_number"}
@@ -221,6 +221,18 @@ export const OrdersList = () => {
                     render={(value: boolean | null) => <DeptureStatus status={value} />} />
 
                 <Table.Column
+                    dataIndex={["departure_date"]}
+                    title={translate("line_orders.fields.departure_date")}
+                    width={100}
+                    render={(value: any) => <DateField value={value} format="DD.MM.YYYY" />}
+                />
+                <Table.Column
+                    dataIndex={["completion_date"]}
+                    title={translate("line_orders.fields.completion_date")}
+                    width={100}
+                    render={(value: any) => <DateField value={value} format="DD.MM.YYYY" />}
+                />
+                <Table.Column
                     dataIndex={["is_completed"]}
                     title={translate("line_orders.fields.is_active.title")}
                     width={120}
@@ -248,6 +260,7 @@ export const OrdersList = () => {
                     )}
                     render={(value: boolean) => <OrderStatus status={value} />}
                 />
+
                 <Table.Column
                     dataIndex={["created_at"]}
                     title={translate("line_orders.fields.created_at")}

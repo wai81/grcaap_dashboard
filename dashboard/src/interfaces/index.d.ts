@@ -3,7 +3,9 @@ export interface IOrder {
     order_number: string;
     order_create_date: string;
     adress_object:string;
+    completion_date:string;
     is_completed:boolean;
+    departure_date: string;
     departure: boolean;
     organization_id: number;
     created_at:string;
@@ -16,6 +18,8 @@ export interface ILineOrder {
     costumer_contact_phone:string;
     adress_object:string;
     departure:boolean;
+    departure_date: string;
+    completion_date:string;
     is_completed: boolean;
     organization_id: number;
     created_at:string;
