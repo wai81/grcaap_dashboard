@@ -1,6 +1,8 @@
 import React from "react";
 import { useLogin } from "@refinedev/core";
-import { AuthPage } from "@refinedev/antd";
+import { AuthPage } from "../../components/pages/auth";
+// import { AuthPage } from "@refinedev/antd";
+
 
 export const Login = () => {
     // const { mutate, isLoading } = useLogin();

@@ -11,15 +11,17 @@ import routerProvider, { NavigateToResource } from "@refinedev/react-router-v6";
 import { ConfigProvider, App as AntdApp } from 'antd'
 import ru_Ru from 'antd/locale/ru_RU'
 import 'dayjs/locale/ru';
-import { ThemedLayoutV2, ThemedTitleV2, useNotificationProvider } from "@refinedev/antd";
+import { useNotificationProvider } from "@refinedev/antd";
 import "antd/dist/reset.css";
 import { OrganizationList } from './pages/organizations/list'
 import { DashboardOutlined } from '@ant-design/icons'
 import { DashboardPage } from './pages/dashboard'
 import { OrdersLineList } from './pages/orders_line/list'
 import { useTranslation } from 'react-i18next'
-import { Header } from './components/header'
-
+//import { Header } from './components/header'
+import { ThemedLayoutV2 } from './components/layout'
+import { ThemedTitleV2 } from './components/layout/title'
+import { ThemedHeaderV2 } from './components/layout/header'
 function App() {
   const { t, i18n } = useTranslation();
 
@@ -89,7 +91,8 @@ function App() {
                   {/* <Header /> */}
                   <ThemedLayoutV2
                     Title={(props) => (<ThemedTitleV2 {...props} text="Состояние заказов" />)}
-                    Header={Header}
+                    //Header={Header}
+                    Header={ThemedHeaderV2}
                   >
                     <Outlet />
                   </ThemedLayoutV2>
